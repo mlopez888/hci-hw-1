@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Classes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="search-container">
+      <h1>Search Classes</h1>
+      <div class="bookmark-button">
+        <button type="button" aria-label="Bookmark" title="Bookmark this page">
+          <i class="fa-regular fa-bookmark"></i>
+        </button>
+      </div>
+
+      <form class="search-form">
+        <select name="term">
+          <option value="fall2025">Fall 2025</option>
+        </select>
+        <input type="text" placeholder="Title, Subject, Instructor, Keyword" />
+        <select name="instruction-method">
+          <option value="" disabled selected>Instruction Method</option>
+          <option value="in-person">In-Person</option>
+          <option value="online">Online</option>
+          <option value="hybrid">Hybrid</option>
+        </select>
+        <div class="checkbox-group">
+          <input type="checkbox" id="online-programs" name="online-programs" />
+          <label for="online-programs"
+            >Find courses available to students in online programs</label
+          >
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="no-overlap" name="no-overlap" />
+          <label for="no-overlap">Don't Overlap Primary Cart</label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-search">
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>SEARCH</span>
+        </button>
+      </form>
+
+      <div class="suggestions-section">
+        <h2>SUGGESTIONS</h2>
+        <button type="button" class="btn btn-primary">
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>EXPLORE PROGRAMS</span>
+        </button>
+        <button type="button" class="btn btn-primary">
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>DEGREE AUDIT & ADVISING</span>
+        </button>
+      </div>
+
+      <div class="carts-section">
+        <h2>CARTS</h2>
+        <button type="button" class="btn btn-primary">
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>PRIMARY CART</span>
+        </button>
+        <select name="cart-select">
+          <option value="" disabled selected>Select a Cart...</option>
+        </select>
+        <button type="button" class="btn btn-primary">
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>PRIMARY PLAN</span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
